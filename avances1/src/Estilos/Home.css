@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding: 0;
+   box-sizing:border-box ;
+}
+
+html,body {
+
+  background-color: white;
+
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.ContenedorBtn{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 139px;
+  width: 100%;
+  background-color: #14141E;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+h1{
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 64px;
+line-height: 77px;
+text-align: center;
+color: #14141E;
+}
+#Uniwork{
+  display: flex;
+  margin-right: 340px;
+  color: white;
+font-size: 30px;
+cursor: pointer;
+}
+#Uniwork:hover{
+  color: blueviolet;
+}
+.principal{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+h2{
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+font-size: 32px;
+text-align: center;
+color: #14141E;
+}
+.BT1{
+  width: 664px;
+ height: 63px;
+}
+
+
+
+
