@@ -1,0 +1,50 @@
+*{
+  margin:0;
+  padding: 0;
+   box-sizing:border-box ;
+}
+
+html,body {
+
+  background-color: white;
+
+}
+
+
+
+.ContenedorBtn{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 139px;
+  width: 100%;
+  background-color: #14141E;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #14141E;
+}
+
+#Uniwork{
+ 
+  margin-right: 340px;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+  position: absolute;
+  top: 1;
+  left: 10px;
+  width: 280px; 
+}
+
+
+
