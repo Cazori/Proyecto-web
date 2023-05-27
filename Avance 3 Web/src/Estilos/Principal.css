@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding: 0;
+   box-sizing:border-box ;
+}
+
+html,body {
+
+  background-color: white;
+
+}
+
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+h3{
+  
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 60px;
+line-height: 77px;
+text-align: center;
+color: #14141E;
+margin-bottom: 30px;
+
+}
+
+
+.principal1 {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  max-height: 700px; 
+  justify-content: center;
+  margin-right: -20px;
+ 
+}
+
+.imagenH {
+  width: 950px;
+  height: 950px;
+  margin-top: 30px;
+  margin-bottom: -300px;
+}
+h2{
+  
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+font-size: 32px;
+text-align: start;
+color: #14141E;
+margin-left: 15px;
+}
+.BT1{
+  width: 664px;
+ height: 63px;
+}
+
+.cont1{
+  display: flex;
+  flex-direction: row;
+  zoom: 125%;
+  margin-top: -450px;
+ 
+
+}
+
+#unete{
+  margin-left: 200px;
+}
+
+#titleHome{
+   margin-top: 25px;
+  
+}
+.contBotoneHome{
+  margin-bottom: -100px;
+}
+
+

@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+     box-sizing:border-box ;
+  }
+  
+  html,body {
+  
+    background-color: white;
+  
+  }
+  
+  .App{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+  }
+
+  .GloboImage {
+    position: fixed;
+    height: 20px;
+    left: 1213px;
+    top: 200px;
+  
+}
+
+/*Boton Calificaciones*/
+
+.BottonCalificaciones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  font-family: Nunito, sans-serif;
+  position: fixed;
+  width: 515px;
+  height: 54px;
+  left: 390px;
+  top: 905px;
+  font-size: 32px;
+  color: white;
+  background: #14141E;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*Boton Opinión sobre usuario*/
+
+.BottonOpinarUsuario{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  font-family: Nunito, sans-serif;
+  position: fixed;
+  width: 515px;
+  height: 54px;
+  left: 391px;
+  top: 983px;
+  
+  background: #14141E;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+/*Contenedor*/
+
+.rectanguloContenedor{ 
+position: fixed;
+width: 870px;
+height: 642px;
+left: 213px;
+top: 229px;
+background: #E4E4E4;
+border-radius: 15px;
+}
+
+/*ContenedorInfoPersonas*/
+
+/*Perfil de X Persona*/
+
+.PerfilDeXPersona{
+  position: fixed;
+  width: 364px;
+  height: 42px;
+  left: 156px;
+  top: 163px;
+  
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 130%;
+  color: #000000;
+}
+
+/*Foto Personas Ubicación*/
+
+#FotoPersona{
+  position: fixed;
+  height: 205px;
+  left: 233px;
+  top: 254px;
+
+}
+
+#PersonaComputer{
+  position: fixed;
+  height: 805px;
+  left: 1253px;
+  top: 184px;
+}
+
+.BTNFoto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito, sans-serif;
+  position: fixed;
+  width: 179px;
+  height: 65px;
+  left: 244px;
+  top: 500px;
+  
+  background: #FC2B4B;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 0;
+  font-size: 23px;
+  color: white;
+  cursor: pointer;
+}
+
+.BTGuardar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito, sans-serif;
+  position: fixed;
+  width: 179px;
+  height: 65px;
+  left: 244px;
+  top: 580px;
+  
+  background: #14141E;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 0;
+  font-size: 23px;
+  color: white;
+  cursor: pointer;
+}
+
+.TrabajoPersona{
+  position: fixed;
+  width: 531px;
+  height: 42px;
+  left: 316px;
+  top: 210px;
+  
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 5000;
+  font-size: 25px;
+  line-height: 130%;
+
+}
+
+.BottonPublicarCalificacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  font-family: Nunito, sans-serif;
+  position: fixed;
+  width: 372px;
+  height: 54px;
+  left: 970px;
+  top: 915px;
+  
+  background: #14141E;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.UbacacionFotoNombre .UbiNombre{
+  position: fixed;
+  width: 211px;
+  height: 205px;
+  left: 325px;
+  top: 998px;
+}
+
+/* InputTextArea.module.css */
+
+.textareaOpinion {
+  position: fixed;
+  width: 776px;
+  height: 1323px;
+  left: 775px;
+  top: 526px;
+  font-size: 90px;
+  
+}
+
+.PersonasComunidad{
+  position: fixed;
+  width: 364px;
+  height: 42px;
+  left: 156px;
+  top: 163px;
+  
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 130%;
+
+}
