@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding: 0;
+   box-sizing:border-box ;
+   
+}
+
+html,body {
+
+  background-color: white;
+
+}
+
+
+
+
+
+h3{
+  
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 60px;
+line-height: 77px;
+text-align: center;
+color: #14141E;
+margin-bottom: 30px;
+zoom: 150%;
+
+
+}
+
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-left: 50px;
+
+  
+  
+
+}
+h2{
+  
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+font-size: 32px;
+text-align: start;
+color: #14141E;
+
+}
+
+
+.contD{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  zoom: 200%;
+  justify-content: center;
+  
+}
+.inputs2{
+  display: flex;
+  flex-direction: column;
+  
+  flex-direction: row;
+
+  
+  
+  
+  
+  
+
+}
+.linea{
+  width: 6px;
+height: 300px;
+background: #14141E;
+margin-left: 60px;
+
+}
+.BOTON{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.zoom{
+  zoom: 100%;
+  
+}
+
+
+
+
+
