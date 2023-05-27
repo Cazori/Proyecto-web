@@ -1,4 +1,3 @@
-
 import '../Estilos/RegistroC.css';
 import { BTLink } from '../Components/BTLink';
 import { BTLink2 } from '../Components/BTLink2';
@@ -6,11 +5,39 @@ import { InputR } from '../Components/InputR';
 import Nadvar from '../Components/Nadvar'
 import { InputI } from '../Components/InputI';
 
-
-//esta es la pagina principal, es decir la primera que mostrará al ingresar 
-//actualmente tiene estilos css
-
 function RegistroP() {
+  const [user, setUser] = useState('');
+  const [email, setEmail] = useState('');
+  const [pass, setPassword] = useState('');
+
+  const handleUsernameChange = (event) => {
+      setUser(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+      setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+      setPassword(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+      event.preventDefault();
+
+      try {
+          const res = await createUser(name, email, user, pass)
+          console.log(res)
+          setUser('');
+          setEmail('');
+          setPassword('');
+
+          console.log('Registro exitoso:', res.data);
+      } catch (error) {
+
+          console.error('Error registro:', error.response.data);
+      }
+  };
 
   return (
     <div className="App">
@@ -29,28 +56,24 @@ function RegistroP() {
         </div> 
         <div className="in">
       <div className="principalR">
-        
 
-         
-     
-      
-          <div className="UsuarioR">
-            <h2>Usuario</h2>
-
+        <div className="UsuarioR">
+          <h2>Usuario</h2>
           <InputI/>
-          </div>
-          <div className="emailR">
+          <input className='inputI' type="text" value={inputValue} onChange={handleUsernameChange} />
+        </div>
+        <div className="emailR">
 
           <h2>Email</h2>
           <InputI/>
-          </div>
-          <div className="contrasR">
+          <input className='inputI' type="text" value={inputValue} onChange={handleEmailChange} />
+        </div>
+        <div className="contrasR">
 
           <h2>Contraseña</h2>
           <InputI/>
-          </div>
-          
-         
+          <input className='inputI' type="text" value={inputValue} onChange={handlePasswordChange} />
+        </div>
    
       </div>
       <BTLink2 
@@ -58,11 +81,8 @@ function RegistroP() {
          text ="Siguiente paso"
          link="DatosR"/>
       </div>
-        
-       
-        </div>
-
-     
+      
+          </div>
         </div>
     </div>
   );
