@@ -1,0 +1,98 @@
+*{
+  margin:0;
+  padding: 0;
+   box-sizing:border-box ;
+}
+
+html,body {
+
+  background-color: white;
+
+}
+
+
+
+h1{
+  
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 60px;
+line-height: 77px;
+text-align: center;
+color: #14141E;
+margin-bottom: 80px;
+margin-top: -40px;
+}
+
+
+
+
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  max-height: 400px; 
+}
+
+.imagenI {
+  width: 750px;
+  height: 750px;
+  margin-top: 250px;
+  
+}
+.imgI{
+  margin-top: -100px;
+}
+.contI{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: -70px;
+  
+  
+
+}
+.registro{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  
+  
+}
+h2{
+  
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: start;
+  color: #14141E;
+}
+
+.email{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+.contras{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+.zoom2{
+ zoom: 155%;
+}
+#welcome{
+  margin-top: -60px;
+}
+

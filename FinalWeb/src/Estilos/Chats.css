@@ -1,0 +1,55 @@
+*{
+  margin:0;
+  padding: 0;
+   box-sizing:border-box ;
+   
+}
+
+html,body {
+
+  background-color: white;
+
+}
+
+.Chats{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.carchatcontainer{
+ 
+position: absolute;
+width: 950px;
+height: 1058px;
+left: 0px;
+top: 139px;
+
+background: #14141E;
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+
+
+
+}
+.GenContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.chatbox{
+  display: flex;
+  position: fixed;
+right: 270px;
+top: 150px;
+}
+
+
+
+
+
