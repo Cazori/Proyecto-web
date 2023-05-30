@@ -10,69 +10,42 @@ import NadvarI from '../Components/NadvarI';
 //esta es la pagina principal, es decir la primera que mostrará al ingresar 
 //actualmente tiene estilos css
 
-
-const Ingreso = () => {
-
+function Ingreso () {
+  const [pass, setPassword] = useState('');
+  const [user, setUser] = useState('');
   const navigate = useNavigate();
 
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-  );
-  const [userData, setUserData] = useState({
-    usuario: "", 
-    password: "",
-  });
   
-  const database = [
-    {
-      username: "user",
-      password: "pass"
-    },
-  ];
-  
-  const errors = {
-    uname: "Usuario invalido",
-    pass: "Password invalida"
+  const handleUsernameChange = (event) => {
+    setUser(event.target.value);
   };
-
-
-  const handleSubmit = (event) => {
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    var { uname, pass } = document.forms[0];
+    try {
+      const res = await loginUsuario(user, pass)
+      console.log(res.token)
+      setUser('');
+      setPassword('');
+      
+      console.log('Login exitoso:', res.data);
+      toast.info('Registro exitoso, disfruta')
+      localStorage.setItem("token", JSON.stringify(res.token))
+      navigate('/Login');
 
-    const userData = database.find((user) => user.username === uname.value);
-
-    if (userData) {
-      if (userData.password !== pass.value) {
-        setErrorMessages({ name: "pass", message: errors.pass });
-
-      } else {
-        setIsSubmitted(true);
-        navigate('/');
-        
-      }
-    } else {
-      setErrorMessages({ name: "uname", message: errors.uname });
-    }
+    } catch (error) {
+      console.error('Error al login:', error.response.data);
+      toast.error('Error al registrarse: ' + error.response.data.msg);
     
-    console.log("Registrado")
-  };
-
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setUserData((prevUserData) => ({
-      ...prevUserData,
-      [name]: value,
-    }));
+    }
   };
 
   return (
-    
     <div className="App">
-      <form className='Form' onSubmit={handleSubmit}>
       <NadvarI/>
       <div className="zoom2">
       
@@ -92,22 +65,18 @@ const Ingreso = () => {
           <InputI/>
            </div>
            <div className="contras">
-           {renderErrorMessage("uname")}
+
           <h2>Contraseña</h2>
           <InputI/>
            </div>
               
         <BTLink2
         text ="Ingresar"
-        link="https://www.youtube.com/watch?v=mCdA4bJAGGk"/>
+        link=""/>
       </div>
         
-       
         </div>
-
-     
          </div>
-         </form>
     </div>
   );
 }

@@ -71,7 +71,7 @@ function DatosR() {
 <BTLink2 
    
    text ="Unirse"
-   link="https://www.google.com"/>
+   link="/EditarPerfil"/>
 </div>
 </div>
     </div>

@@ -15,16 +15,16 @@ function NadvarH() {
                 </Link>
                 <BTLink 
                 text ="Empleos"
-                link="RegistroC" 
+                link="/RegistroC" 
                 tipo=""/>
                 <BTLink 
                 text ="Personas"
-                link="Personas"
+                link="/Personas"
                 tipo=""/>
                
                 <BTLink 
                 text ="Ingresa"
-                link="Ingreso"
+                link="/Ingreso"
                 tipo=""/>
                 
             </div>

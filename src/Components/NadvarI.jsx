@@ -15,11 +15,11 @@ function NadvarI() {
                 </Link>
                 <BTLink 
                 text ="Empleos"
-                link="RegistroC" 
+                link="/RegistroC" 
                 tipo=""/>
                 <BTLink 
                 text ="Personas"
-                link="Personas"
+                link="/Personas"
                 tipo=""/>
                
                

@@ -1,12 +1,17 @@
 import '../Estilos/Home.css';
+import { Link } from "react-router-dom";
 
-function App() {
+function App({link}) {
 
     return (
       <div className="App">
+            <Link to={link}>
             <button className="BTChat" href="#"> Chat
-              
-            </button>
+    
+        
+    </button> 
+    </Link>
+            
         </div>
   );
 }

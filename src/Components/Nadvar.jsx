@@ -15,16 +15,16 @@ function Nadvar() {
                 </Link>
                 <BTLink 
                 text ="Empleos"
-                link="Chat" 
+                link="/Chat" 
                 tipo=""/>
                 <BTLink 
                 text ="Personas"
-                link="Personas"
+                link="/Personas"
                 tipo=""/>
               
                 <BTLink 
                 text ="Perfil"
-                link="Miperfil"
+                link="/EditarPerfil"
                 tipo=""/>
                 
             </div>
